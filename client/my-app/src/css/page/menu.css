@@ -1,0 +1,120 @@
+.hide {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.menu .title {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 0.9;
+  text-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  margin: 3em 0 15vh 0;
+}
+
+.menu .title .rock {
+  font-weight: 900;
+  font-size: 106px;
+}
+
+.menu .title .paper {
+  font-weight: 100;
+  font-size: 99px;
+}
+
+.menu .title .scissors {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.menu .options > *:not(:last-child):not(label) {
+  margin-bottom: 20px;
+}
+
+.menu .options {
+  width: 20em;
+  margin: auto;
+}
+
+.menu .options .join {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 68% 30%;
+}
+
+.menu .options .button {
+  width: 100%;
+  height: 2.8em;
+  border-radius: 0.4em;
+  outline: 0;
+  border: 0;
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #fff;
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.menu .options .button:active {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+  transform: translate(5px, 5px);
+}
+
+.menu .options label {
+  font-size: 0.8em;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.menu .options .input {
+  width: 100%;
+  height: 3em;
+  font-weight: 900;
+  font-size: 1.1em;
+  color: #fff;
+  background: none;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid white;
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.25));
+}
+
+.menu .options .input::placeholder {
+  font-weight: 400;
+  color: #d8d8d8;
+}
+
+.menu .options .colorpicker {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.menu .options .colorpicker .color {
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.25));
+  z-index: 0;
+}
+
+.menu .options .colorpicker .color:hover {
+  transform: scale(1.2);
+}
+
+.menu .options .colorpicker .active {
+  outline: 2px solid white;
+  z-index: 1;
+}

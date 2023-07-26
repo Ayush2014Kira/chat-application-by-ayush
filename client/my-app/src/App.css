@@ -1,0 +1,24 @@
+.sent-message{
+  float: right;
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.received-message{
+  text-align: left ;
+background-color: aqua;
+padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.box{
+  border: 1px solid black;
+    height: 50vh;
+    width: 25rem;
+}
+
+.clear {
+  clear: both;
+}

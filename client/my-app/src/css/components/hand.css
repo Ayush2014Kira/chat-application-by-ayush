@@ -1,0 +1,58 @@
+
+.active {
+    left: 2em;
+}
+
+.hand .userChoice {
+    position: absolute;
+    left: 0;
+    filter: drop-shadow(20px 20px 2px rgba(0, 0, 0, 0.25));
+    transform-origin: left;
+    --scale: 1;
+    transition: left 0.5s ease-in-out;
+}
+
+.hand .computerChoice {
+    position: absolute;
+    right: -50vw;
+    filter: drop-shadow(-20px 20px 2px rgba(0, 0, 0, 0.25));
+    transform-origin: left;
+    --scale: -1;
+    transition: right 0.5s ease-in-out;
+    transform: scaleX(var(--scale));
+}
+
+.hand .moving {
+    animation: moving 1s ease-in-out  infinite;
+}
+
+.hand .image {
+    width: clamp(300px, 50vw, 2500px);
+}
+
+.hand .activeLeft {
+    left: -100%;
+}
+
+.hand .activeRight {
+    right: -100%;
+}
+
+@keyframes moving {
+    0% {
+        -webkit-transform: scaleX(var(--scale)) rotate(0deg);
+        transform: scaleX(var(--scale)) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: scaleX(var(--scale)) rotate(0deg);
+        transform: scaleX(var(--scale)) rotate(-30deg);
+    }
+    100% {
+        -webkit-transform: scaleX(var(--scale)) rotate(0deg);
+        transform: scaleX(var(--scale)) rotate(0deg);
+    }
+}
+.leftimage {
+    position: absolute;
+    left: 50%;
+}

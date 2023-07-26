@@ -1,0 +1,70 @@
+/* .snake {
+    position: absolute;
+    background-color: #FF0000;
+    } */
+
+.snake img {
+  position: absolute;
+  height: 100px;
+  transform: rotateZ(356deg);
+  left: 312px;
+  bottom: 0px;
+}
+.snake1 img {
+    position: absolute;
+    height: 155px;
+    left: 7rem;
+    transform: rotateZ(71deg);
+    bottom: 10px;
+
+}
+
+.snake2 img{
+    position: absolute;
+    height: 202px;
+    left: 14rem;
+    top: 23rem;
+    transform: rotateZ(52deg);
+}
+
+.snake3 img{
+    position: absolute;
+    height: 16rem;
+    top: 7rem;
+    transform: rotateZ(293deg);
+    left: 10rem;
+}
+.snake4 img{
+    position: absolute;
+    height: 95px;
+    left: 83px;
+    top: 113px;
+    width: 430px;
+    transform: rotateZ(12deg);
+}
+
+.snake5 img {
+    position: absolute;
+    height: 84px;
+    transform: rotateZ(282deg);
+    top: 19px;
+    left: 417px;
+    width: 116px;
+}
+
+.snake6 img{
+    position: absolute;
+    height: 107px;
+    top: 36px;
+    right: 241px;
+    transform: rotateZ(57deg);
+    width: 167px;
+
+}
+
+.snake7 img{
+    position: absolute;
+    height: 90px;
+    bottom: 13rem;
+    right: 5rem;
+}
